@@ -1322,4 +1322,137 @@ img {
       }
     }
 
-    
+    /* FOOTER STYLES */
+
+.site-footer {
+  background-color: #F3F4F6; /* light gray (adjust as needed) */
+  color: #4B5563; /* medium-grey text */
+  font-family: 'Inter', sans-serif;
+  padding: 40px 20px;
+}
+
+.site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E5E7EB; /* subtle line above bottom section */
+}
+
+.site-footer__branding {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6B7280; /* lighter version of grey */
+}
+
+.site-footer__nav {
+  flex: 1 1 200px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 30px 0px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-nav-list li a {
+  font-size: 1rem;
+  color: #1F2937; /* near black / dark grey */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-list li a:hover {
+  color: #0078FF; /* primary accent color */
+}
+
+.site-footer__socials {
+  flex: 1 1 200px;
+  text-align: right;
+}
+
+.footer-follow {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #1F2937;
+}
+
+.social-icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.social-icon-list li a img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%); /* optional: desaturate icons by default */
+  transition: filter 0.2s ease, opacity 0.2s ease;
+  opacity: 0.7;
+}
+
+.social-icon-list li a:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.site-footer__bottom p,
+.site-footer__bottom .privacy-policy {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+.site-footer__bottom .privacy-policy {
+  text-decoration: none;
+}
+
+.site-footer__bottom .privacy-policy:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .site-footer__top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .site-footer__socials {
+    text-align: center;
+  }
+  .site-footer__bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

@@ -245,11 +245,11 @@ img {
   
   .hero__image {
     margin-top: 40px;
-    order: 2; /* Makes image appear after content */
+    order: 2; 
   }
   
   .hero__content {
-    order: 1; /* Makes content appear first */
+    order: 1; 
   }
 }
 
@@ -289,17 +289,14 @@ img {
 }
 
 /* FEATURES SECTION START */
-
-/* WHY CHOOSE US */
-
 .watermark {
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0.3; /* a bit more faint */
+  opacity: 0.3;
   z-index: 0;
   pointer-events: none;
-  width: 400px; /* adjust size */
+  width: 400px;
   height: auto;
 }
 
@@ -307,15 +304,11 @@ img {
 .features {
   position: relative;
   padding: 80px 20px;
-  /* background-color: #F5F7FA; */
   background-color: #111827;
   color: #F9FAFB;
-  /* color: #F9FAFB #111827  #F0F7FB; */
 }
 
 
-
-/* Rest of your features styles (from earlier), e.g.: */
 .features__intro {
   max-width: 600px;
   margin: 0 auto 40px;
@@ -366,12 +359,11 @@ img {
 }
 
 .feature-card__icon {
-  width: 60px;
-  height: 60px;
+  width: 45px;
   margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 .feature-card__title, .feature-card__desc {
-
   color: #E5E7EB; 
 }
 .feature-card__title {
@@ -419,7 +411,8 @@ img {
 
 .iso__image {
   flex-shrink: 0;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
 }
 
 .iso__image img {
@@ -438,7 +431,7 @@ img {
   }
 
   .iso__image {
-    max-width: 150px;
+    /* max-width: 150px; */
   }
 
   .iso__text {
@@ -547,7 +540,7 @@ img {
   font-size: 2rem;
   font-weight: 500;
   vertical-align: middle;
-  color: #9ca3af; /* light gray quotes */
+  color: #9ca3af; 
 }
 
 .cert__image {
@@ -637,6 +630,7 @@ img {
   width: 48px;
   height: 48px;
   margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 
 .why-choose__card-title {
@@ -683,8 +677,8 @@ img {
 .how-it-works {
   position: relative;
   overflow: hidden;
-  background-color: #111827; /* matching features section dark tone */
-  color: #F9FAFB; /* light text for contrast */
+  background-color: #111827; 
+  color: #F9FAFB;
   padding: 80px 20px;
 }
 
@@ -725,7 +719,7 @@ img {
 }
 
 .how-it-works__step {
-  background-color: #1F2937; /* slightly lighter than section bg for cards */
+  background-color: #1F2937; 
   padding: 30px;
   border-radius: 12px;
   text-align: center;
@@ -741,10 +735,15 @@ img {
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-primary); /* using your primary colour */
+  color: var(--color-primary); 
   margin-bottom: 16px;
 }
-
+.step-number img{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 16px;
+  margin: 0 auto 16px;
+}
 .step-title {
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
@@ -757,7 +756,7 @@ img {
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #D1D5DB; /* light grey for description */
+  color: #D1D5DB; 
   line-height: 1.5;
 }
 
@@ -791,8 +790,8 @@ img {
 .key-features {
   position: relative;
   overflow: hidden;
-  background-color: #111827; /* same dark background as features section */
-  color: #F9FAFB; /* light text for contrast */
+  background-color: #111827; 
+  color: #F9FAFB; 
   padding: 80px 20px;
 }
 
@@ -983,7 +982,6 @@ img {
 .comparison-header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* background: linear-gradient(to right,#dfdede ,#bebcbc, #979595, #767676); */
   background: linear-gradient(to right, #a4d3f9, #6cb8ff, #0078ff);
   color: #FFFFFF;
   padding: 20px;
@@ -1000,6 +998,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: -180px;
 }
 
 .comparison-option img {

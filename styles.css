@@ -1,5 +1,4 @@
 /* Reset Styles */
- 
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +7,6 @@
 
 html {
   font-size: 100%;
-  /* disable some text size adjustments on mobile */
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -84,7 +82,7 @@ img {
   font-size: var(--btn-font-size);
   font-weight: var(--btn-font-weight);
   padding: var(--btn-padding-v) var(--btn-padding-h);
-  border: none;      /* so custom and clean */
+  border: none;      
   border-radius: var(--btn-radius);
   cursor: pointer;
   text-align: center;
@@ -94,7 +92,7 @@ img {
 
 }
 
-/* Primary variant */
+
 .btn-primary {
   background: linear-gradient(to right, #005bb5, #0078ff, #005bb5);
   color: var(--btn-primary-text);
@@ -106,12 +104,12 @@ img {
   background:linear-gradient(to right, #00AEEF,#0078ff, #005bb5);
 }
 
-/*active / pressed state */
+
 .btn-primary:active {
   transform: translateY(1px);
 }
 
-/* Hero-specific override or spacing (optional) */
+
 .hero__btn {
   margin-top: 32px;
   font-size: 1.25rem;
@@ -119,7 +117,7 @@ img {
 }
 
 
-/* 3. Navbar Styles */
+/*Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -175,7 +173,7 @@ img {
   --hero-title-font-size: 3.8rem; 
   --hero-title-line-height: 1.1;
   --hero-subtitle-font-size: 1.25rem;
-  --hero-subtitle-color: #333333; /* dark grey for subtitle */
+  --hero-subtitle-color: #333333; 
   --hero-font-family: 'Inter', sans-serif;
 }
 
@@ -204,7 +202,6 @@ img {
   font-size: var(--hero-title-font-size);
   line-height: var(--hero-title-line-height);
   font-weight: 700; 
-
   background: linear-gradient(to right, var(--hero-title-gradient-start), var(--hero-title-gradient-end));
   -webkit-background-clip: text;
   background-clip: text;
@@ -229,8 +226,6 @@ img {
 
 
 /* HERO SECTION END */
-
-/* Responsive Hero Section */
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
@@ -404,14 +399,12 @@ img {
 
 /* ISO 27001 CERTIFICATION SECTION START */
 .iso {
-  background-color: #f9fafb; /* page background */
+  background-color: #f9fafb; 
   padding: 80px 60px 0px 60px
 }
 
-
 .iso__image {
   flex-shrink: 0;
-  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -431,7 +424,6 @@ img {
   }
 
   .iso__image {
-    /* max-width: 150px; */
   }
 
   .iso__text {
@@ -509,12 +501,12 @@ img {
 
 /* CERTIFICATION SECTION START */
 .cert {
-  background-color: #f9fafb; /* page background */
+  background-color: #f9fafb; 
   padding: 0px 20px 0px 20px;
 }
 
 .cert__container {
-  background-color: #02202A; /* dark navy box */
+  background-color: #02202A;
   color: #ffffff;
   max-width: 1200px;
   margin: 0 auto;
@@ -545,8 +537,7 @@ img {
 }
 
 .cert__image {
-  /* flex-shrink: 0; */
-  /* max-width: 180px; */
+  
 }
 
 .cert__image img {
@@ -637,7 +628,7 @@ img {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: inherit; /* so highlight works */
+  color: inherit;
 }
 
 .why-choose__card-desc {
@@ -656,7 +647,7 @@ img {
   font-size: 1.2rem;
 }
 
-/* Responsive tweaks */
+
 
 @media(max-width: 768px) {
   .why-choose__heading {
@@ -802,7 +793,7 @@ img {
   opacity: 0.3;
   z-index: 0;
   pointer-events: none;
-  width: 400px; /* adjust if needed */
+  width: 400px; 
   height: auto;
 }
 
@@ -833,7 +824,7 @@ img {
 }
 
 .key-feature-card {
-  background-color: #1F2937; /* cards slightly lighter than section bg */
+  background-color: #1F2937;
   padding: 30px;
   border-radius: 12px;
   text-align: left;
@@ -849,7 +840,7 @@ img {
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #E5E7EB; /* light greyish */
+  color: #E5E7EB; 
   line-height: 1.4;
 }
 
@@ -1042,7 +1033,7 @@ img {
 }
 
 .gyzertech-value {
-  color: #10B981; /* Green for positive */
+  color: #10B981; 
   border-left: 1px solid #E5E7EB;
   border-right: 1px solid #E5E7EB;
 }
@@ -1052,7 +1043,7 @@ img {
 }
 
 .generic-value {
-  color: #EF4444; /* Red for negative */
+  color: #EF4444; 
 }
 
 .generic-value svg {
@@ -1223,7 +1214,6 @@ img {
     /* Final CTA Section */
     .final-cta {
       padding: 100px 20px;
-      /* background: linear-gradient(135deg, #004E8C 0%, #0078ff 50%, #00B0FF 100%); */
       background-color: #111827;
       color: #FFFFFF;
       text-align: center;
@@ -1238,7 +1228,6 @@ img {
       left: 0;
       width: 100%;
       height: 100%;
-      /* background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"); */
       opacity: 0.5;
     }
 
@@ -1325,8 +1314,8 @@ img {
     /* FOOTER STYLES */
 
 .site-footer {
-  background-color: #F3F4F6; /* light gray (adjust as needed) */
-  color: #4B5563; /* medium-grey text */
+  background-color: #F3F4F6; 
+  color: #4B5563; 
   font-family: 'Inter', sans-serif;
   padding: 40px 20px;
 }
@@ -1343,7 +1332,7 @@ img {
   align-items: center;
   gap: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #E5E7EB; /* subtle line above bottom section */
+  border-bottom: 1px solid #E5E7EB; 
 }
 
 .site-footer__branding {
@@ -1359,7 +1348,7 @@ img {
 .footer-tagline {
   font-size: 1rem;
   line-height: 1.5;
-  color: #6B7280; /* lighter version of grey */
+  color: #6B7280; 
 }
 
 .site-footer__nav {
@@ -1377,13 +1366,13 @@ img {
 
 .footer-nav-list li a {
   font-size: 1rem;
-  color: #1F2937; /* near black / dark grey */
+  color: #1F2937; 
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .footer-nav-list li a:hover {
-  color: #0078FF; /* primary accent color */
+  color: #0078FF; 
 }
 
 .site-footer__socials {
@@ -1409,7 +1398,7 @@ img {
 .social-icon-list li a img {
   width: 24px;
   height: 24px;
-  filter: grayscale(100%); /* optional: desaturate icons by default */
+  filter: grayscale(100%); 
   transition: filter 0.2s ease, opacity 0.2s ease;
   opacity: 0.7;
 }

@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting && !hasRun) {
         hasRun = true;
         runCounters();
-        obs.disconnect(); // optional: stop observing after running once
+        obs.disconnect(); 
       }
     });
-  }, { threshold: 0.5 }); // 0.5 means 50% of section visible
+  }, { threshold: 0.5 }); 
 
   observer.observe(document.querySelector(".stats"));
 });

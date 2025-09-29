@@ -457,9 +457,10 @@ img {
 }
 
 .stats__image img {
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-left: 25px;
 }
 
 .stats__content {
@@ -986,9 +987,7 @@ img {
   padding: 20px;
 }
 
-.comparison-empty {
-  /* Empty cell for alignment */
-}
+
 
 .comparison-option {
   text-align: center;
@@ -1072,7 +1071,10 @@ img {
     gap: 15px;
     text-align: center;
   }
-  
+  .comparison-option{
+    margin-left: 0px;
+  }
+   
   .gyzertech-value {
     border-left: none;
     border-right: none;

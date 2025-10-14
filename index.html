@@ -17,7 +17,7 @@
     </div>
     
     <div class="navbar__action">
-      <a href="https://gyzertech.com" data-form="uicTVCvLR9JU9H7aO0Fy" class=" pop-up cta-button btn btn--primary">Enquire now</a>
+      <a href="https://gyzertech.com" data-form="cXDVcDtLSFkB5ayXMNFy" class=" pop-up cta-button btn btn--primary">Enquire now</a>
     </div>
   </nav>
 
@@ -26,7 +26,7 @@
       <div class="hero__content container">
           <h1 class="hero__title">Mobile Apps <span>Designed for Growth</span>  & Performance</h1>
           <p class="hero__subtitle">Collaborate with us to bring your app idea to life with modern design, reliable code, and features your users will love.</p>
-          <a href="#get-started" data-form="uicTVCvLR9JU9H7aO0Fy" class=" pop-up cta-button btn btn-primary hero__btn">Get Started</a>
+          <a href="#get-started" data-form="cXDVcDtLSFkB5ayXMNFy" class=" pop-up cta-button btn btn-primary hero__btn">Get Started</a>
       </div>
       <div class="hero__image">
           <img src="images/hero.png" alt="Hero Image">
@@ -173,7 +173,7 @@
         </div>
 
         <div class="why-choose__cta">
-          <a href="#free-consultation" data-form="uicTVCvLR9JU9H7aO0Fy" class="pop-up cta-button btn btn-primary">Book a Free Consultation</a>
+          <a href="#free-consultation" data-form="cXDVcDtLSFkB5ayXMNFy" class="pop-up cta-button btn btn-primary">Book a Free Consultation</a>
         </div>
 
       </div>
@@ -257,7 +257,7 @@
           </div>
         </div>
         <div class="key-features__cta">
-          <a href="#get-started" data-form="uicTVCvLR9JU9H7aO0Fy" class="pop-up cta-button btn btn-primary">Get Started Today</a>
+          <a href="#get-started" data-form="cXDVcDtLSFkB5ayXMNFy" class="pop-up cta-button btn btn-primary">Get Started Today</a>
         </div>
       </div>
     </section>
@@ -500,7 +500,7 @@
       <div class="final-cta__content">
         <h2 class="final-cta__heading">Your App Idea. Our Expertise. Let's Build It Together.</h2>
         <p class="final-cta__subtitle">Take the first step towards bringing your vision to life with a team that cares about your success</p>
-        <a href="#consultation" data-form="uicTVCvLR9JU9H7aO0Fy" class="pop-up cta-button btn btn-primary hero__btn">Start Your Free Consultation Today</a>
+        <a href="#consultation" data-form="cXDVcDtLSFkB5ayXMNFy" class="pop-up cta-button btn btn-primary hero__btn">Start Your Free Consultation Today</a>
       </div>
     </section>
 
@@ -547,16 +547,28 @@
 
 
 <!-- Keep a hidden popup iframe so the official embed can register (will not auto-show) -->
-<iframe
-  src="https://api.leadconnectorhq.com/widget/form/uicTVCvLR9JU9H7aO0Fy"
+<!-- <iframe
+  src="https://api.leadconnectorhq.com/widget/form/cXDVcDtLSFkB5ayXMNFy"
   style="display:none;width:100%;height:100%;border:none;border-radius:3px"
-  id="popup-uicTVCvLR9JU9H7aO0Fy"
+  id="popup-cXDVcDtLSFkB5ayXMNFy"
   data-layout="{'id':'POPUP'}"
   data-trigger-type="none"
   data-activation-type="none"
-  data-form-id="uicTVCvLR9JU9H7aO0Fy"
+  data-form-id="cXDVcDtLSFkB5ayXMNFy"
   title="CRM CONTACT FORM"
-></iframe>
+></iframe> -->
+<iframe
+    src="https://api.leadconnectorhq.com/widget/form/cXDVcDtLSFkB5ayXMNFy"
+    style="display:none;width:100%;height:100%;border:none;border-radius:3px"
+    id="popup-cXDVcDtLSFkB5ayXMNFy" 
+    data-layout="{'id':'POPUP'}"
+    data-trigger-type="none"
+    data-activation-type="none"
+    data-form-id="cXDVcDtLSFkB5ayXMNFy"
+    title="MOBILE APP FORM"
+        >
+</iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
@@ -664,6 +676,8 @@
 
   function openModalWithInlineForm(formId) {
     // Reuse the iframe if already created
+
+    
     let iframe = modalContent.querySelector('iframe');
     if (!iframe) {
       iframe = document.createElement('iframe');
@@ -695,7 +709,7 @@
   buttons.forEach(btn => {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
-      const formId = this.dataset.form || 'uicTVCvLR9JU9H7aO0Fy';
+      const formId = this.dataset.form || 'cXDVcDtLSFkB5ayXMNFy';
 
       // If the official method is available, use it (preferred)
       if (window.LeadConnector && typeof window.LeadConnector.showFormPopup === 'function') {
